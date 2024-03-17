@@ -46,7 +46,7 @@ bool is_valid_arguments(int argc, char *argv[]) {
 
 void processArguments(int argc, char *argv[]) {
   bool isHelpCommand = argc == 1 || argc == 2 && strcmp(argv[1], "help") == 0;
-  bool isArrayCommand = argc == 3 && strcmp(argv[1], "array") == 0 && strcmp(argv[2], "access") == 0;
+  bool isArrayCommand = argc == 3 && strcmp(argv[1], "array") == 0;
 
   if (isHelpCommand)
     helpCommand();

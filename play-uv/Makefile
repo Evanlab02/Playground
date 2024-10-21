@@ -1,5 +1,12 @@
 .PHONY: releases dev run format lint
 
+clean:
+	rm -rf coverage.xml
+	rm -rf htmlcov
+	rm -rf .pytest_cache
+	rm -rf .mypy_cache
+	rm -rf __pycache__
+
 releases:
 	uv run ./scripts/releases.py
 
